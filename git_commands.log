@@ -1,0 +1,54 @@
+git init
+https://github.com/github/gitignore
+
+git status
+git log
+git log --pretty=oneline
+git branch
+git stash list
+
+git add git_commands.log
+git add -f NAME.ignore
+git rm git_commands.log
+git checkout --git_commands.log //return the file to the status of last git add or commit
+git stash
+git stash pop
+git stash apply stash@{0}
+
+
+
+git commit -m "initial files"
+git commit -a //all files in working and stage directory
+
+git reset --hard HEAD
+git reset --hard HEAD^
+git reset --hard HEAD^^
+git reset --hard HEAD^100
+git reset --hard 8df8074 //some version in the future
+
+git reset HEAD git_commands.log //unstage some file
+
+git reflog
+
+//branch used to develop new routines and fix bugs
+git checkout -b routine_testbranch //equals to
+git branch routine_testbranch //and
+git checkout routine_testbranch
+
+git merge routine_testbranch
+git branch -d routine_testbranch
+
+
+
+git remote
+git remote -v
+
+//link to a web repo
+git remote add web_repo git@github.com:NAME/NAME.git
+git push -u web_repo master //push to cloud
+git push web_repo master
+
+//clone from a web repo
+git clone git@github.com:NAME/NAME.git
+
+git pull
