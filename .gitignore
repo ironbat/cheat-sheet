@@ -1,28 +1,22 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+*.dat
 
-# Precompiled Headers
-*.gch
-*.pch
+.vscode
+.kdev4/
+*.kdev4
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+*~
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
 
-# Fortran module files
-*.mod
+_tensorboard_records/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+
+*.doc
+*.docx
+
+z_*.*
+
+# *.log
+# *.sh

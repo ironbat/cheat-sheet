@@ -1,12 +1,25 @@
+ls -al ~/.ssh //list ssh keys
+ssh-keygen -t rsa -b 4096 -C "NAME@mail.com" //Generating a new SSH key
+
+git config --global user.email "NAME@mail.com"
+git config --global user.name "NAME"
+git config --get **
+
 git init
 https://github.com/github/gitignore
 
 git status
 git log
 git log --pretty=oneline
+git log -p git_commands.log
+git blame git_commands.log //who changed what and when
 git branch
 git stash list
+git diff
 
+
+
+git add .
 git add git_commands.log
 git add -f NAME.ignore
 git rm git_commands.log
@@ -14,8 +27,6 @@ git checkout --git_commands.log //return the file to the status of last git add 
 git stash
 git stash pop
 git stash apply stash@{0}
-
-
 
 git commit -m "initial files"
 git commit -a //all files in working and stage directory
@@ -29,6 +40,8 @@ git reset --hard 8df8074 //some version in the future
 git reset HEAD git_commands.log //unstage some file
 
 git reflog
+
+
 
 //branch used to develop new routines and fix bugs
 git checkout -b routine_testbranch //equals to

@@ -1,0 +1,9 @@
+//linux:
+virtualenv -p python name_environment
+source name_environment/bin/activate
+deactivate
+
+//windows:
+virtualenv --python "C:\\Anaconda3\\python.exe" name_environment
+source name_environment/Scripts/activate
+deactivate
