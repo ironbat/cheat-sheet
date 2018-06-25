@@ -16,6 +16,7 @@ git blame git_commands.log //who changed what and when
 git branch
 git stash list
 git diff
+git diff --no-index
 
 
 

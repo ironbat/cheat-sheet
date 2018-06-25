@@ -1,9 +1,28 @@
-//linux:
+--virtualenv:
+
+--python
 virtualenv -p python name_environment
+python virtualenv.py name_environment
+--anaconda
+virtualenv --python "C:\\Anaconda3\\python.exe" name_environment
+
+--linux
 source name_environment/bin/activate
+--windows:
+source name_environment/Scripts/activate
+
 deactivate
 
-//windows:
-virtualenv --python "C:\\Anaconda3\\python.exe" name_environment
-source name_environment/Scripts/activate
-deactivate
+
+
+--conda virtual environment:
+conda update conda
+conda create -n name_environment python=3.6.5 anaconda
+
+source activate name_environment
+conda install -n name_environment [package]
+source deactivate
+
+--list environments
+conda info -e
+conda remove -n name_environment --all
