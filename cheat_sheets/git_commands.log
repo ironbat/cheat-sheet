@@ -3,7 +3,8 @@ ssh-keygen -t rsa -b 4096 -C "NAME@mail.com" //Generating a new SSH key
 
 git config --global user.email "NAME@mail.com"
 git config --global user.name "NAME"
-git config --get **
+git config --get user.email
+git config --get user.name
 
 git init
 https://github.com/github/gitignore
