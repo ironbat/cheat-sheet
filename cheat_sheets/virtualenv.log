@@ -18,6 +18,7 @@ deactivate
 --conda virtual environment:
 conda update conda
 conda create -n name_environment python=3.6.5 anaconda
+conda create --name name_environment --clone existing_name_environment
 
 source activate name_environment
 conda install -n name_environment [package]
