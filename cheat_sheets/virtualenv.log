@@ -1,7 +1,7 @@
 --virtualenv:
 
 --python
-virtualenv -p python name_environment
+virtualenv -p python --system-site-packages name_environment
 python virtualenv.py name_environment
 --anaconda
 virtualenv --python "C:\\Anaconda3\\python.exe" name_environment

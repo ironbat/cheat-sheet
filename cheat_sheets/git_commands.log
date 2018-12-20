@@ -6,6 +6,8 @@ git config --global user.name "NAME"
 git config --get user.email
 git config --get user.name
 
+git config --global core.autocrlf input
+
 git init
 https://github.com/github/gitignore
 

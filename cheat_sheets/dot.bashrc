@@ -10,8 +10,8 @@ export LD_LIBRARY_PATH=~/.openmpi/lib/
 # GPU
 # export CUDA_HOME=/usr/local/cuda/7.5.18
 # export CUDA_HOME=/usr/local/cuda/8.0.44
-export CUDA_HOME=/home/name_user/software/cuda/8.0.44
 # export CUDA_HOME=/usr/local/cuda/9.1.85
+export CUDA_HOME=/home/name_user/software/cuda/9.1.85
 
 if [ -z ${CUDA_HOME} ]; then
         echo "CUDA_HOME is unset";
